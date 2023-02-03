@@ -98,6 +98,7 @@ export default function Home() {
 						onSubmit={submitContact}
 						className={styles.form_content}
 					>
+						<input type={"hidden"} value={csrfToken} name="_csrf" />
 						<input
 							required
 							placeholder="Name*"
